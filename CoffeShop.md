@@ -80,3 +80,6 @@ git commit -m "Add requirements files"
 
 ## **¿Cómo continuar con la configuración del proyecto?**
 Con el entorno preparado, es importante crear un archivo base HTML que sirva como plantilla. Te reto a crear `base.html` con un menú y un pie de página para usar en el curso de Django.
+
+## **¿Qué permite hacer Pillow con los campos de imagen?**
+Pillow permite realizar validaciones en imágenes, como asegurarse de que las imágenes subidas cumplan con ciertas características en cuanto a resolución.

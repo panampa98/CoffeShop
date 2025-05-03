@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import FormView
+from django.views.generic import FormView, ListView
 from products.forms import ProductForm
+from products.models import Product
 
 # Create your views here.
 class ProductFormView(FormView):
@@ -15,3 +16,8 @@ class ProductFormView(FormView):
 
     def form_invalid(self, form):
         return super().form_invalid(form)
+    
+class ProductListView(ListView):
+    model = Product
+    template_name = 'products/list_product.html'
+    context_object_name = 'products'
